@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小學數學互動樂園：帶餘與不帶餘除法</title>
+    <title>帶餘與不帶餘除法</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter & Rounded Font feel -->
@@ -27,13 +27,13 @@
                 <span class="text-3xl">🍎🍬</span>
                 <div>
                     <h1 class="text-xl font-bold text-indigo-700">小學數學互動學習白板</h1>
-                    <p class="text-xs text-slate-500">探究真實情境中的「帶餘除法」與「不帶餘除法」</p>
+                    <p class="text-xs text-slate-500">探究不同情境中的「帶餘除法」與「不帶餘除法」</p>
                 </div>
             </div>
             <!-- Navigation Tabs -->
             <nav class="flex space-x-1 sm:space-x-4 mt-2 sm:mt-0 overflow-x-auto">
-                <button onclick="switchTab('theory')" id="btn-theory" class="px-3 py-2 text-sm font-medium transition tab-active whitespace-nowrap">1. 觀念導學</button>
-                <button onclick="switchTab('quiz')" id="btn-quiz" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-indigo-600 whitespace-nowrap">2. 情境判斷挑戰</button>
+                <button onclick="switchTab('theory')" id="btn-theory" class="px-3 py-2 text-sm font-medium transition tab-active whitespace-nowrap">1. 概念</button>
+                <button onclick="switchTab('quiz')" id="btn-quiz" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-indigo-600 whitespace-nowrap">2. 情境判斷</button>
                 <button onclick="switchTab('vertical')" id="btn-vertical" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-indigo-600 whitespace-nowrap">3. 直式計算演練</button>
                 <button onclick="switchTab('dashboard')" id="btn-dashboard" class="px-3 py-2 text-sm font-medium text-slate-600 hover:text-indigo-600 whitespace-nowrap flex items-center gap-1 bg-indigo-50 rounded-lg px-3">
                     <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -51,7 +51,7 @@
                 <div class="max-w-3xl mx-auto text-center space-y-3">
                     <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full">第一單元：觀念大解密</span>
                     <h2 class="text-2xl sm:text-3xl font-black text-slate-900">什麼時候「剛好分完」？什麼時候「會有剩下」？</h2>
-                    <p class="text-slate-600">在我們的日常生活中，除法無所不在。當我們分配東西時，會遇到兩種截然不同的結果！</p>
+                    <p class="text-slate-600">當我們分配東西時，會遇到兩種截然不同的結果！</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-6 mt-8">
@@ -68,7 +68,7 @@
                                 當被除數能夠被除數完全平分，沒有任何剩餘（或者可以一直除到小數點後剛好除盡）。
                             </p>
                             <div class="bg-white/80 p-4 rounded-lg space-y-2 border border-emerald-100">
-                                <p class="text-xs font-bold text-emerald-700 uppercase tracking-wider">小學生活例子：</p>
+                                <p class="text-xs font-bold text-emerald-700 uppercase tracking-wider">生活例子：</p>
                                 <p class="text-sm font-medium text-slate-800">「10 顆糖果平分給 2 位小朋友，每人分到 5 顆，剛好分完。」</p>
                                 <div class="text-xs font-mono text-emerald-900 font-bold bg-emerald-100 p-2 rounded">
                                     算式：10 ÷ 2 = 5 (顆) ｜ 餘數：0
@@ -94,7 +94,7 @@
                                 當物體分組或裝袋時，分到最後不夠再分出一整份，剩下的數量就是「餘數」。
                             </p>
                             <div class="bg-white/80 p-4 rounded-lg space-y-2 border border-amber-100">
-                                <p class="text-xs font-bold text-amber-700 uppercase tracking-wider">小學生活例子：</p>
+                                <p class="text-xs font-bold text-amber-700 uppercase tracking-wider">生活例子：</p>
                                 <p class="text-sm font-medium text-slate-800">「14 顆草莓每 3 顆裝一盤，可裝 4 盤，剩下 2 顆。」</p>
                                 <div class="text-xs font-mono text-amber-900 font-bold bg-amber-100 p-2 rounded">
                                     算式：14 ÷ 3 = 4 盤 餘 2 顆 ｜ 驗算：3 × 4 + 2 = 14
@@ -109,7 +109,7 @@
                 </div>
 
                 <div class="mt-8 bg-indigo-50 border border-indigo-200 rounded-xl p-5 text-center">
-                    <h4 class="font-bold text-indigo-900 mb-2">💡 老師引導小撇步</h4>
+                    <h4 class="font-bold text-indigo-900 mb-2">💡 小錦囊</h4>
                     <p class="text-sm text-indigo-800 max-w-2xl mx-auto">
                         提醒學生：在帶餘除法中，<b>餘數必須小於除數</b>（如果餘數大於或等於除數，代表還能再多裝一袋或多分一份喔！）
                     </p>
@@ -122,8 +122,8 @@
             <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 border border-indigo-100">
                 <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 pb-4 border-b border-slate-100">
                     <div>
-                        <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full">第二單元：生活情境判斷大考驗</span>
-                        <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">閱讀下方情境，判斷這是「帶餘除法」還是「不帶餘除法」？</h2>
+                        <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-3 py-1 rounded-full">第二單元：生活情境判斷</span>
+                        <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">閱讀下列各情境，判斷這是「帶餘除法」還是「不帶餘除法」？</h2>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="text-sm font-medium text-slate-500">題號：<span id="quiz-current-idx">1</span> / <span id="quiz-total-idx">40</span></span>
@@ -166,7 +166,7 @@
                     <div class="text-center space-y-2 mb-8">
                         <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">第三單元：直式算式與驗算工作坊</span>
                         <h2 class="text-2xl font-black text-slate-900">動手寫出標準除法直式與驗算</h2>
-                        <p class="text-sm text-slate-600">挑選一個經典範例，理解商與餘數在直式中的位置。</p>
+                        <p class="text-sm text-slate-600">理解商與餘數在直式中的位置。</p>
                     </div>
 
                     <!-- 範例選擇下拉 -->
@@ -218,12 +218,12 @@
             <div class="bg-white rounded-2xl shadow-xl p-6 sm:p-8 border border-indigo-100">
                 <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 pb-4 border-b border-slate-100">
                     <div>
-                        <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">第四單元：全班 23 人互動白板</span>
-                        <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">教師端即時學習監控與派題</h2>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">第四單元：互動白板</span>
+                        <h2 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">即時學習監控</h2>
                     </div>
                     <div class="flex flex-wrap items-center gap-3">
                         <button onclick="simulateStudentAnswers()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm px-4 py-2 rounded-xl shadow transition flex items-center gap-2">
-                            <span>⚡</span> 模擬全班 23 人作答
+                            <span>⚡</span> 全班
                         </button>
                         <button onclick="resetClassroom()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm px-4 py-2 rounded-xl transition">
                             重置白板
@@ -246,7 +246,7 @@
                         <p class="text-2xl font-black text-teal-900 mt-1" id="stat-correct">0 人</p>
                     </div>
                     <div class="bg-amber-50 p-4 rounded-xl border border-amber-100 text-center">
-                        <p class="text-xs text-amber-600 font-bold">需加強關心</p>
+                        <p class="text-xs text-amber-600 font-bold">需加強</p>
                         <p class="text-2xl font-black text-amber-900 mt-1" id="stat-review">0 人</p>
                     </div>
                 </div>
@@ -255,9 +255,9 @@
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
                     <div class="flex justify-between items-center mb-4">
                         <h3 class="font-bold text-slate-800 text-sm flex items-center gap-2">
-                            <span>📊</span> 23 位學生即時作答狀態卡片
+                            <span>📊</span> 即時作答狀態
                         </h3>
-                        <span class="text-xs text-slate-500">點擊任一學生卡片可檢視詳細作答歷程</span>
+                        <span class="text-xs text-slate-500">點擊任一學生即可檢視</span>
                     </div>
                     <div id="student-grid" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3">
                         <!-- 動態生成 23 個學生 -->
@@ -272,7 +272,7 @@
     <div id="student-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4">
             <div class="flex justify-between items-center border-b pb-3">
-                <h3 id="modal-title" class="font-bold text-lg text-slate-800">學生詳細作答</h3>
+                <h3 id="modal-title" class="font-bold text-lg text-slate-800">學生作答</h3>
                 <button onclick="closeModal()" class="text-slate-400 hover:text-slate-600 font-bold text-xl">&times;</button>
             </div>
             <div id="modal-body" class="space-y-3 text-sm text-slate-600">
